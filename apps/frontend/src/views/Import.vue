@@ -48,7 +48,7 @@
           <el-table-column
             align="right">
             <template slot="header" slot-scope="{}">
-              <el-input 
+              <el-input
                 v-model="search"
                 prefix-icon="el-icon-search"
                 size="mini"
@@ -138,7 +138,7 @@ export default {
         case '22': return '美容院';
         case '23': return '本';
         case '24': return '趣味';
-        case '25': return '着物';
+        // case '25': return '__';
         case '26': return '衣類';
         case '27': return 'その他';
         default: return '';
@@ -146,7 +146,7 @@ export default {
     },
     /* eslint-disable */
     currencyFormatter: function(row, column) {
-      return '¥ ' + row.item_cost.toLocaleString();    
+      return '¥ ' + row.item_cost.toLocaleString();
     },
     submitForm: function(rows) {
       const params = new URLSearchParams()
